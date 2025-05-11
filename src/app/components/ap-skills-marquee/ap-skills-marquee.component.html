@@ -1,0 +1,11 @@
+<div class="p-12 bg-black w-screen overflow-x-hidden">
+  <div [@testMarquee]="animState" (@testMarquee.done)="animState = !animState"
+    class="text-white flex flex-row justify-around space-x-10 capitalize">
+    <div *ngFor="let item of items,let i=index" class="flex flex-row">
+      <h1 [ngClass]="(i+1)%3? 'text-white': 'text-orange-600'" class="font-inter font-bold text-9xl">{{item}}</h1>
+    </div>
+    <div *ngFor="let item of items,let i=index" class="flex flex-row">
+      <h1 [ngClass]="(i+1)%3? 'text-orange-600': 'text-white'" class="font-inter font-bold text-9xl">{{item}}</h1>
+    </div>
+  </div>
+</div>

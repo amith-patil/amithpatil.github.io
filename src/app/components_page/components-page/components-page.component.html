@@ -1,0 +1,18 @@
+
+<div class=" flex flex-col bg-black p-12 space-y-20">
+    <H1 class="text-white text-9xl font-bebas">CARDS :</H1>
+
+    <app-ap-expanding-card (isExpanded)="change_logo($event)"
+    [card_number]="card_number"
+    [icon]="icon_value"
+    [title]="title"
+    [content]="content_text"></app-ap-expanding-card>
+
+    <H1 class="text-white text-9xl font-bebas">SECTION TITLE :</H1>
+    <app-ap-titles></app-ap-titles>
+    <H1 class="text-white text-9xl font-bebas">NAV BAR :</H1>
+    <app-ap-nav-bar></app-ap-nav-bar>
+
+    <H1 class="text-white text-9xl font-bebas">SKILLS MARQUEE :</H1>
+    <app-ap-skills-marquee></app-ap-skills-marquee>
+</div>

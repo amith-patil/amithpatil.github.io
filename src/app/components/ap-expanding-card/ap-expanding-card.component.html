@@ -1,0 +1,12 @@
+<div  [ngClass]="{' bg-orange-600' : expanded, 'bg-slate-900': !expanded}"  class="bg-grey-800 p-12 flex-col font-inter font-medium text-2xl items-center space-y-10 transition ease-in-out duration-1000 cursor-pointer overflow-hidden" (click)="expand() ">
+    <div class="flex items-center justify-between">
+        <h1 [ngClass]="{'text-white' : !expanded, 'text-black': expanded}" class="font-inter font-bold text-xl">{{card_number}}</h1>
+        <div  [ngClass]="{'text-white' : !expanded, 'text-black': expanded}" class="text-5xl transition-all ease-in">
+            <mat-icon [inline]="true">{{card_icon}}</mat-icon>
+        </div>
+    </div>
+    <h1  [ngClass]="{'text-white' : !expanded, 'text-black': expanded}" class="font-bebas font-bold text-7xl">{{title}}</h1>
+    <div  [@inOutAnimation]=expanded class="transition ease-in-out duration-500 delay-300 text-wrap">
+         <p class="font-inter font-light max-w-fit text-lg">{{content}}</p>
+    </div>
+</div>
