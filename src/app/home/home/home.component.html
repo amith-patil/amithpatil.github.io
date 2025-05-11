@@ -25,7 +25,7 @@
 
 
     <!-- about section  -->
-    <div class="flex justify-center items-center h-screen z-10" id="about">
+    <div class="flex justify-center items-center h-screen z-10 " id="about">
         <app-ap-titles [title]="about" [rotate]="'right'" class="absolute -translate-x-1/6"></app-ap-titles>
         <div class="flex  space-x-12 z-20">
             <img src="./about.jpg" class="max-w-lg h-full object-cove " alt="">
@@ -51,19 +51,20 @@
                 <div class="flex my-12 justify-center"><a
                         href="https://drive.google.com/file/d/1c-sgC9PvL5ufKE-31gi0zO419MtkLhGH/view?usp=sharing"
                         target="_blank"
-                        class=" transition ease-in-out  hover:-translate-y-1 hover:scale-110 duration-300 p-6 px-12 text-white bg-orange-600 rounded-full shadow-xl font-inter font-bold  text-lg">DOWNLOAD
+                        class=" transition ease-in-out  hover:-translate-y-1 hover:scale-110 duration-300 p-6 px-12 text-white bg-orange-500 rounded-full shadow-xl font-inter font-bold  text-lg">DOWNLOAD
                         CV</a>
                 </div>
             </div>
 
         </div>
     </div>
+
+    <!-- experience section  -->
     <div class="flex justify-center items-center w-full" id="experience">
-        <!-- <div class="absolute h-screen w-screen bg-gray-600/5 rotate-5"></div> -->
-        <div class="flex justify-center items-center z-20 ">
+        <div class="flex justify-center items-center z-30 py-40">
             <div class="flex flex-col h-screen">
                 <h1 class="text-9xl font-bebas text-white">Work <br> Positions</h1>
-                <div class="flex space-x-12">
+                <div class="flex justify-between space-x-12">
                     <div class=" py-6">
                         <h2 class="text-2xl font-inter font-medium text-white">2016 - 2018</h2>
                     </div>
@@ -71,7 +72,7 @@
                         <h2 class="text-2xl font-inter font-medium text-white">Dell EMC</h2>
                     </div>
                     <div class=" flex-col py-6 space-y-10">
-                        <h2 class="text-xl font-inter font-medium text-white">Technical support Engineer I</h2>
+                        <h2 class="text-2xl font-bebas font-medium text-orange-600">Technical support Engineer I</h2>
                         <p class="text-lg font-inter font-light text-white max-w-xl">'Lorem ipsum dolor sit amet,
                             consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
                             aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
@@ -80,7 +81,7 @@
                 </div>
                 <div class="h-[1px] bg-white/30  w-[768px] z-50"></div>
 
-                <div class="flex space-x-12">
+                <div class="flex justify-between space-x-12">
                     <div class="py-6">
                         <h2 class="text-2xl font-inter font-medium text-white">2018 - 2021</h2>
                     </div>
@@ -88,7 +89,7 @@
                         <h2 class="text-2xl font-inter font-medium text-white">Dell EMC</h2>
                     </div>
                     <div class="flex-col py-6 space-y-10">
-                        <h2 class="text-xl font-inter font-medium text-white">Technical support Engineer II</h2>
+                        <h2 class="text-2xl font-bebas font-medium text-orange-600">Technical support Engineer II</h2>
                         <p class="text-lg font-inter font-light text-white max-w-xl">'Lorem ipsum dolor sit amet,
                             consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
                             aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
@@ -97,15 +98,33 @@
                 </div>
                 <div class="h-[1px] bg-white/30  w-[768px] z-50"></div>
 
-                <div class="flex space-x-12">
+                <div class="flex justify-between space-x-12">
                     <div class=" py-6">
-                        <h2 class="text-2xl font-inter font-medium text-white">2021 - Present</h2>
+                        <h2 class="text-2xl font-inter font-medium text-white">2021 - 2023</h2>
                     </div>
                     <div class=" py-6">
                         <h2 class="text-2xl font-inter font-medium text-white">Google</h2>
                     </div>
                     <div class=" flex-col py-6 space-y-10">
-                        <h2 class="text-xl font-inter font-medium text-white">Technical support Engineer I</h2>
+                        <h2 class="text-2xl font-bebas font-medium text-orange-600"> Solutions Engineer</h2>
+                        <p class="text-lg font-inter font-light text-white max-w-xl">'Lorem ipsum dolor sit amet,
+                            consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+                            aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+                            ex ea commodo consequat.</p>
+                    </div>
+                </div>
+                <div class="h-[1px] bg-white/30  w-[768px] z-50"></div>
+
+
+                <div class="flex justify-between space-x-12">
+                    <div class=" py-6">
+                        <h2 class="text-2xl font-inter font-medium text-white">2023 - Present</h2>
+                    </div>
+                    <div class=" py-6">
+                        <h2 class="text-2xl font-inter font-medium text-white">Google</h2>
+                    </div>
+                    <div class=" flex-col py-6 space-y-10">
+                        <h2 class="text-2xl font-bebas font-medium text-orange-600"> Solutions Engineer II</h2>
                         <p class="text-lg font-inter font-light text-white max-w-xl">'Lorem ipsum dolor sit amet,
                             consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
                             aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
@@ -117,10 +136,12 @@
             </div>
         </div>
         <app-ap-titles [title]="experience" [rotate]="'left'" class="z-10 absolute"></app-ap-titles>
-
     </div>
+
+    <!-- skills section  -->
     <div class="flex flex-col h-screen justify-center items-center bg-black" id="skills">
         <app-ap-skills-marquee class="z-20 rotate-5"></app-ap-skills-marquee>
+        <app-ap-titles [title]="skills" [rotate]="'right'" class="z-10 absolute -translate-x-1/6"></app-ap-titles>
         <div class="flex justify-center items-center z-20 ">
             <div class="flex flex-col h-screen py-40">
                 <div class="flex justify-between">
@@ -179,7 +200,7 @@
 
             </div>
         </div>
-        <app-ap-titles [title]="skills" [rotate]="'right'" class="z-10 absolute -translate-x-1/6"></app-ap-titles>
+        
 
     </div>
     <div class="flex flex-col h-screen justify-center items-center bg-black" id="contact">
@@ -220,7 +241,7 @@
                 </a>
             </div>
             <div class="flex justify-center z-30"><a href="mailto:amithpatil1993@gmail.com"
-                    class=" transition ease-in-out  hover:-translate-y-1 hover:scale-110 duration-300 px-16 py-6 text-white bg-orange-600 rounded-full shadow-xl font-inter font-bold  text-4xl">Contact
+                    class=" transition ease-in-out  hover:-translate-y-1 hover:scale-110 duration-300 px-16 py-6 text-white bg-orange-500 rounded-full shadow-xl font-inter font-bold  text-4xl">Contact
                 </a>
             </div>
         </div>
@@ -234,8 +255,9 @@
     </div>
 </div>
 
-<div class="h-screen w-screen bg-black overflow-hidden flex flex-col justify-center items-center p-12 space-y-12 lg:hidden">
-        <div>
+<div
+    class="h-screen w-screen bg-black overflow-hidden flex flex-col justify-center items-center p-12 space-y-12 lg:hidden">
+    <div>
         <a href="#home" class="text-white font-inter font-medium text-md">
             <svg class="w-12 h-12" viewBox="0 0 365 256" fill="white" xmlns="http://www.w3.org/2000/svg">
                 <path fill-rule="evenodd" clip-rule="evenodd"
@@ -243,6 +265,6 @@
             </svg>
         </a>
     </div>
-    <H1 class="font-bebas text-white text-2xl text-center">This website is currently not supported on Mobile</H1> 
+    <H1 class="font-bebas text-white text-2xl text-center">This website is currently not supported on Mobile</H1>
 
 </div>
